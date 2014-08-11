@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#0068A8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewStuff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Communicate with Canary Node"
+        android:typeface="serif"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/textViewStuff"
+        android:text="Send"
+        android:onClick="sendClick"
+        android:textColor="#FFFFFF"
+        android:typeface="serif"/>
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/send"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textViewStuff"
+        android:layout_alignBottom="@+id/send"
+        android:text="u"
+        android:visibility="gone"
+        android:typeface="serif"/>
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/send"
+        android:text="Temperature"
+        android:textSize="30dp"
+        android:paddingTop="20dp"
+        android:textColor="#FFFFFF"
+        android:typeface="serif"
+        />
+
+    <TextView
+        android:id="@+id/humid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/send"
+        android:text="Humidity"
+        android:textSize="30dp"
+        android:paddingTop="20dp"
+        android:textColor="#FFFFFF"
+        android:typeface="serif"
+        />
+
+    <TextView
+        android:id="@+id/noisePol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/temp"
+        android:paddingTop="200dp"
+        android:textSize="30dp"
+        android:text="Noise Pollution"
+        android:textColor="#FFFFFF"
+        android:typeface="serif"
+        />
+
+    <TextView
+        android:id="@+id/carMono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/humid"
+        android:textSize="30dp"
+        android:text="CO"
+        android:paddingTop="200dp"
+        android:textColor="#FFFFFF"
+        android:typeface="serif"
+        />
+
+    <TextView
+        android:id="@+id/tempMonitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/temp"
+        android:text="Wait for connection"
+        android:textSize="20dp"
+        android:paddingTop="20dp"
+        android:textColor="#FFFFFF"
+        android:typeface="serif"
+        />
+
+    <TextView
+        android:id="@+id/humidMonitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/humid"
+        android:text="Wait for connection"
+        android:textSize="20dp"
+        android:paddingTop="20dp"
+        android:textColor="#FFFFFF"
+        android:typeface="serif"
+        />
+
+    <TextView
+        android:id="@+id/coMonitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/carMono"
+        android:text="Wait for connection"
+        android:textSize="20dp"
+        android:paddingTop="20dp"
+        android:textColor="#FFFFFF"
+        android:typeface="serif"
+        />
+
+    <TextView
+        android:id="@+id/noisePolMonitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/noisePol"
+        android:text="Wait for connection"
+        android:textSize="20dp"
+        android:paddingTop="20dp"
+        android:textColor="#FFFFFF"
+        android:typeface="serif"
+        />
+
+    <TextView
+        android:id="@+id/messages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewStuff"
+        android:layout_alignParentLeft="true"
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>
